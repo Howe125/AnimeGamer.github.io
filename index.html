@@ -46,7 +46,8 @@
 </head>
 <body>
 
-  
+
+
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -114,35 +115,59 @@
 </section>
 
 
+<section style="background-color: #ffffff; padding: 20px 0;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <div class="content has-text-justified">
+          <!-- 第一张 teaser 图 -->
+          <img src="static/images/Intro.gif" alt="AnimeGamer Teaser 1" style="display: block; margin: 0 auto; width: 100vw; margin-bottom: 20px;">
+          <!-- 第二张 teaser 图 -->
+          <img src="static/images/Intro2.gif" alt="AnimeGamer Teaser 2" style="display: block; margin: 0 auto; width: 100vw; margin-bottom: 20px;">
+          <!-- 文字说明 -->
+          <p style="color: #333; font-size: 1.1em; margin-top: 20px; text-align: left; font-family: 'Comic Sans MS', 'Comic Sans', cursive;">
+            AnimeGamer is an MLLM for infinite anime life simulation. Users can continuously interact with the game world as a customized character ("Sosuke" in case 1 and "Pazu" in case 2) through 
+            open-ended language instructions. AnimeGamer generates consistent multi-turn game states, consisting of dynamic animation shots (i.e., videos ) 
+            with contextual consistency (e.g., the purple car and the forest background), and updates to character states including stamina, social, and entertainment values.
+            Additionally, AnimeGamer can generalize interactions between characters from different anime films and character actions 
+            (In Case 2, the characters in rounds 1 and 2 come from two different anime films. Additionally, the action of "flying on a broomstick" in round 3 is unique to Qiqi within the training set.), 
+            delivering a coherent and immersive game experience.
+          </p>        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title has-text-centered">Infinite Anime Life Simulation of Qiqi</h2> 
-      <div id="results-carousel" class="carousel results-carousel">
+      <h2 class="title has-text-centered is-size-4" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">Infinite Anime Life Simulation of Qiqi</h2>      <div id="results-carousel" class="carousel results-carousel">
         <!-- Row 1 -->
         <div class="columns">
-          <div class="column">
-            <video poster="" autoplay controls muted loop>
+          <div class="column is-half">
+            <video poster="" controls muted loop>
               <source src="static/videos/1_1.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="column">
-            <video poster="" autoplay controls muted loop>
+          <div class="column is-half">
+            <video poster="" controls muted loop>
               <source src="static/videos/1_2.mp4" type="video/mp4">
             </video>
           </div>
         </div>
         <!-- Row 2 -->
         <div class="columns">
-          <div class="column">
-            <video poster="" autoplay controls muted loop>
+          <div class="column is-half">
+            <video poster="" controls muted loop>
               <source src="static/videos/1_3.mp4" type="video/mp4">
             </video>
             <h2 class="subtitle has-text-centered">
             </h2>
           </div>
-          <div class="column">
-            <video poster="" autoplay controls muted loop>
+          <div class="column is-half">
+            <video poster="" controls muted loop>
               <source src="static/videos/1_4.mp4" type="video/mp4">
             </video>
             <h2 class="subtitle has-text-centered">
@@ -157,32 +182,32 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title has-text-centered">Infinite Anime Life Simulation of Sosuke</h2> 
+      <h2 class="title has-text-centered is-size-4" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">Infinite Anime Life Simulation of Sosuke</h2> 
       <div id="results-carousel" class="carousel results-carousel">
         <!-- Row 1 -->
         <div class="columns">
-          <div class="column">
-            <video poster="" autoplay controls muted loop>
+          <div class="column is-half">
+            <video poster="" controls muted loop>
               <source src="static/videos/2_1.mp4" type="video/mp4">
             </video>
           </div>
-          <div class="column">
-            <video poster="" autoplay controls muted loop>
+          <div class="column is-half">
+            <video poster="" controls muted loop>
               <source src="static/videos/2_2.mp4" type="video/mp4">
             </video>
           </div>
         </div>
         <!-- Row 2 -->
         <div class="columns">
-          <div class="column">
-            <video poster="" autoplay controls muted loop>
+          <div class="column is-half">
+            <video poster="" controls muted loop>
               <source src="static/videos/2_3.mp4" type="video/mp4">
             </video>
             <h2 class="subtitle has-text-centered">
             </h2>
           </div>
-          <div class="column">
-            <video poster="" autoplay controls muted loop>
+          <div class="column is-half">
+            <video poster="" controls muted loop>
               <source src="static/videos/2_4.mp4" type="video/mp4">
             </video>
             <h2 class="subtitle has-text-centered">
@@ -200,7 +225,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3" style="font-family: 'Comic Sans MS', 'Comic Sans', cursive;">Abstract</h2>
         <div class="content has-text-justified">
           <p>
             Recent advancements in image and video synthesis have opened up new promise in generative games. One particularly intriguing application is transforming characters from anime films into interactive, playable entities. This allows players to immerse themselves in the dynamic anime world as their favorite characters for life simulation through language instructions. Such games are defined as "infinite game'' since they eliminate predetermined boundaries and fixed gameplay rules, where players can interact with the game world through open-ended language and experience ever-evolving storylines and environments. Recently, a pioneering approach for infinite anime life simulation employs large language models (LLMs) to translate multi-turn text dialogues into language instructions for image generation. However, it neglects historical visual context, leading to inconsistent gameplay. Furthermore, it only generates static images, failing to incorporate the dynamics necessary for an engaging gaming experience. In this work, we propose AnimeGamer, which is built upon Multimodal Large Language Models (MLLMs) to generate each game state, including dynamic animation shots that depict character movements and updates to character states. We introduce novel action-aware multimodal representations to represent animation shots, which can be decoded into high-quality video clips using a video diffusion model. By taking historical animation shot representations as context and predicting subsequent representations, AnimeGamer can generate games with contextual consistency and satisfactory dynamics. Extensive evaluations using both automated metrics and human evaluations demonstrate that AnimeGamer outperforms existing methods in various aspects of the gaming experience.
@@ -216,7 +241,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3" style="text-align: center;">Method</h2>
+      <h2 class="title is-3" style="text-align: center; font-family: 'Comic Sans MS', 'Comic Sans', cursive;">Method</h2>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
